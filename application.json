@@ -13,6 +13,9 @@
   "unpublishedAppLayout": {
     "type": "MOBILE"
   },
+  "publishedAppLayout": {
+    "type": "MOBILE"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
