@@ -83,7 +83,7 @@
                         "label"
                       ],
                       "topRow": 2,
-                      "bottomRow": 7,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1264,10 +1264,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 62,
+                      "originalTopRow": 67,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 66,
+                      "originalBottomRow": 71,
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
                     },
@@ -1319,10 +1319,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "hug",
-                      "originalTopRow": 62,
+                      "originalTopRow": 67,
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "originalBottomRow": 66,
+                      "originalBottomRow": 71,
                       "buttonVariant": "SECONDARY",
                       "placement": "CENTER"
                     },
@@ -1649,7 +1649,7 @@
                       "originalTopRow": 46,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 62,
+                      "originalBottomRow": 67,
                       "minDynamicHeight": 10
                     }
                   ],
@@ -1678,7 +1678,7 @@
               "widgetId": "beylo8ab6t",
               "containerStyle": "card",
               "minWidth": 450,
-              "isVisible": "{{(appsmith.store.order || []).length > 0}}",
+              "isVisible": "{{(appsmith.store.orderProducts || []).length > 0}}",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
@@ -1687,7 +1687,7 @@
               "originalTopRow": 62,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 130,
+              "originalBottomRow": 135,
               "minDynamicHeight": 10
             },
             {
