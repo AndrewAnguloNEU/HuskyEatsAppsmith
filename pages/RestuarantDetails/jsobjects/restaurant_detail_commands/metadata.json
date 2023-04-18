@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "restaurant_detail_commands",
+    "pageId": "RestuarantDetails",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "RestuarantDetails_restaurant_detail_commands",
+  "deleted": false,
+  "gitSyncId": "643db70fe765624402a4e89b_643e29d3d1a9e01eecd81aa1"
+}

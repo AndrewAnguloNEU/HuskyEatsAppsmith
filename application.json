@@ -3,6 +3,10 @@
     {
       "id": "Student",
       "isDefault": true
+    },
+    {
+      "id": "RestuarantDetails",
+      "isDefault": false
     }
   ],
   "viewMode": false,
