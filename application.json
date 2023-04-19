@@ -7,6 +7,10 @@
     {
       "id": "RestuarantDetails",
       "isDefault": false
+    },
+    {
+      "id": "RestaurantOwner",
+      "isDefault": false
     }
   ],
   "viewMode": false,

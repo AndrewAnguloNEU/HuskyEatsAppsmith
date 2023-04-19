@@ -1,0 +1,7 @@
+{{
+	{
+		name: edit_name_field.inputText,
+		category_id: category_select.selectedOptionValue,
+		building_id: building_select.selectedOptionValue
+	}
+}}

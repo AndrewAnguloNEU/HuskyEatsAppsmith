@@ -83,7 +83,7 @@
                         "label"
                       ],
                       "topRow": 2,
-                      "bottomRow": 6,
+                      "bottomRow": 7,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -129,7 +129,7 @@
                       "originalTopRow": 2,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 7,
+                      "originalBottomRow": 6,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     }
@@ -1215,7 +1215,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "submit_order_button",
-                      "onClick": "{{restaurant_detail_commands.submit_order()}}",
+                      "onClick": "{{create_order.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {

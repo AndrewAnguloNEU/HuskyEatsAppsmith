@@ -1,0 +1,11 @@
+{{
+	{
+		products: appsmith.store?.orderProducts.map(({product_id}) => product_id) || [],
+		subtotal: parseFloat(subtotal_input.inputText),
+		tip: parseFloat(tip_input.inputText),
+    fee: parseFloat(fee_input.inputText),
+    tax: parseFloat(tax_input.inputText),
+    status: "pending",
+    restaurant_id: parseInt(appsmith.URL.queryParams.resID),
+	}
+}}

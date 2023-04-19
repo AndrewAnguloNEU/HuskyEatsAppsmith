@@ -2369,7 +2369,7 @@
                               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
                               "topRow": 1,
                               "bottomRow": 41,
-                              "pageSize": 3,
+                              "pageSize": 2,
                               "parentRowSpace": 10,
                               "type": "LIST_WIDGET_V2",
                               "itemSpacing": 8,
@@ -2441,13 +2441,14 @@
                                         "group"
                                       ],
                                       "topRow": 0,
-                                      "bottomRow": 12,
+                                      "bottomRow": 17,
                                       "dragDisabled": true,
                                       "type": "CONTAINER_WIDGET",
                                       "hideCard": false,
-                                      "shouldScrollContents": false,
+                                      "shouldScrollContents": true,
                                       "isDeletable": false,
                                       "animateLoading": true,
+                                      "dynamicTriggerPathList": [],
                                       "leftColumn": 0,
                                       "dynamicBindingPathList": [
                                         {
@@ -2462,7 +2463,7 @@
                                           "widgetName": "Canvas17",
                                           "displayName": "Canvas",
                                           "topRow": 0,
-                                          "bottomRow": 120,
+                                          "bottomRow": 170,
                                           "parentRowSpace": 1,
                                           "type": "CANVAS_WIDGET",
                                           "canExtend": false,
@@ -2595,8 +2596,8 @@
                                                 "paragraph",
                                                 "label"
                                               ],
-                                              "topRow": 5,
-                                              "bottomRow": 9,
+                                              "topRow": 4,
+                                              "bottomRow": 8,
                                               "parentRowSpace": 10,
                                               "type": "TEXT_WIDGET",
                                               "hideCard": false,
@@ -2625,7 +2626,7 @@
                                               "text": "{{currentItem.name}}",
                                               "key": "o4mdsg1xi2",
                                               "isDeprecated": false,
-                                              "rightColumn": 19,
+                                              "rightColumn": 26,
                                               "textAlign": "LEFT",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "bqa3mlrxeo",
@@ -2652,8 +2653,8 @@
                                                 "paragraph",
                                                 "label"
                                               ],
-                                              "topRow": 5,
-                                              "bottomRow": 9,
+                                              "topRow": 9,
+                                              "bottomRow": 13,
                                               "parentRowSpace": 10,
                                               "type": "TEXT_WIDGET",
                                               "hideCard": false,
@@ -2662,7 +2663,7 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "parentColumnSpace": 5.6407470703125,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 20,
+                                              "leftColumn": 0,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "truncateButtonColor"
@@ -2682,7 +2683,7 @@
                                               "text": "Driver: {{currentItem.first_name + \" \" + currentItem.last_name}}",
                                               "key": "o4mdsg1xi2",
                                               "isDeprecated": false,
-                                              "rightColumn": 43,
+                                              "rightColumn": 26,
                                               "textAlign": "LEFT",
                                               "dynamicHeight": "FIXED",
                                               "widgetId": "b4jcmn9eyf",
@@ -2709,8 +2710,8 @@
                                                 "paragraph",
                                                 "label"
                                               ],
-                                              "topRow": 5,
-                                              "bottomRow": 9,
+                                              "topRow": 4,
+                                              "bottomRow": 8,
                                               "parentRowSpace": 10,
                                               "type": "TEXT_WIDGET",
                                               "hideCard": false,
@@ -2719,7 +2720,7 @@
                                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                                               "parentColumnSpace": 5.6407470703125,
                                               "dynamicTriggerPathList": [],
-                                              "leftColumn": 48,
+                                              "leftColumn": 51,
                                               "dynamicBindingPathList": [
                                                 {
                                                   "key": "truncateButtonColor"
@@ -2756,6 +2757,110 @@
                                               "maxDynamicHeight": 9000,
                                               "fontSize": "1rem",
                                               "minDynamicHeight": 4
+                                            },
+                                            {
+                                              "widgetName": "restaurant_rating",
+                                              "displayName": "Rating",
+                                              "iconSVG": "/static/media/icon.914eb943f3f3762263872a333aff727d.svg",
+                                              "searchTags": [
+                                                "stars"
+                                              ],
+                                              "topRow": 5,
+                                              "bottomRow": 9,
+                                              "parentRowSpace": 10,
+                                              "type": "RATE_WIDGET",
+                                              "maxCount": 5,
+                                              "hideCard": false,
+                                              "animateLoading": true,
+                                              "isReadOnly": true,
+                                              "parentColumnSpace": 5.6407470703125,
+                                              "dynamicTriggerPathList": [],
+                                              "leftColumn": 26,
+                                              "dynamicBindingPathList": [
+                                                {
+                                                  "key": "activeColor"
+                                                },
+                                                {
+                                                  "key": "defaultRate"
+                                                }
+                                              ],
+                                              "isDisabled": false,
+                                              "key": "q1chtpjlh2",
+                                              "isRequired": false,
+                                              "isDeprecated": false,
+                                              "rightColumn": 43,
+                                              "inactiveColor": "#E0DEDE",
+                                              "dynamicHeight": "FIXED",
+                                              "widgetId": "1gggufbh24",
+                                              "isVisible": true,
+                                              "parentId": "8yi1db6vja",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "defaultRate": "{{currentItem?.res_rating || 0}}",
+                                              "activeColor": "{{appsmith.theme.colors.primaryColor}}",
+                                              "size": "SMALL",
+                                              "maxDynamicHeight": 9000,
+                                              "isAllowHalf": false,
+                                              "minDynamicHeight": 4,
+                                              "tooltips": [
+                                                "Terrible",
+                                                "Bad",
+                                                "Neutral",
+                                                "Good",
+                                                "Great"
+                                              ]
+                                            },
+                                            {
+                                              "widgetName": "driver_rating",
+                                              "displayName": "Rating",
+                                              "iconSVG": "/static/media/icon.914eb943f3f3762263872a333aff727d.svg",
+                                              "searchTags": [
+                                                "stars"
+                                              ],
+                                              "topRow": 10,
+                                              "bottomRow": 14,
+                                              "parentRowSpace": 10,
+                                              "type": "RATE_WIDGET",
+                                              "maxCount": 5,
+                                              "hideCard": false,
+                                              "animateLoading": true,
+                                              "isReadOnly": true,
+                                              "parentColumnSpace": 5.6407470703125,
+                                              "dynamicTriggerPathList": [],
+                                              "leftColumn": 26,
+                                              "dynamicBindingPathList": [
+                                                {
+                                                  "key": "activeColor"
+                                                },
+                                                {
+                                                  "key": "defaultRate"
+                                                }
+                                              ],
+                                              "isDisabled": false,
+                                              "key": "q1chtpjlh2",
+                                              "isRequired": false,
+                                              "isDeprecated": false,
+                                              "rightColumn": 43,
+                                              "inactiveColor": "#E0DEDE",
+                                              "dynamicHeight": "FIXED",
+                                              "widgetId": "2t240w7wal",
+                                              "isVisible": true,
+                                              "parentId": "8yi1db6vja",
+                                              "renderMode": "CANVAS",
+                                              "isLoading": false,
+                                              "defaultRate": "{{currentItem?.driver_rating || 0}}",
+                                              "activeColor": "{{appsmith.theme.colors.primaryColor}}",
+                                              "size": "SMALL",
+                                              "maxDynamicHeight": 9000,
+                                              "isAllowHalf": false,
+                                              "minDynamicHeight": 4,
+                                              "tooltips": [
+                                                "Terrible",
+                                                "Bad",
+                                                "Neutral",
+                                                "Good",
+                                                "Great"
+                                              ]
                                             }
                                           ],
                                           "key": "a4wr4vg10g",
