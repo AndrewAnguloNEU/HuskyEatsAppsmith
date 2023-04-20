@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/order/{{appsmith.store.currentStudent.student_id}}"
+        "url": "web:4000/s/order"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n\t{\n\t\tproducts: appsmith.store?.orderProducts.map(({product_id}) => product_id) || [],\n\t\tsubtotal: parseFloat(subtotal_input.inputText),\n\t\ttip: parseFloat(tip_input.inputText),\n    fee: parseFloat(fee_input.inputText),\n    tax: parseFloat(tax_input.inputText),\n    status: \"pending\",\n    restaurant_id: parseInt(appsmith.URL.queryParams.resID),\n\t}\n}}",
+      "body": "{{\n\t{\n\t\tproducts: appsmith.store?.orderProducts.map(({product_id}) => product_id) || [],\n\t\tsubtotal: parseFloat(subtotal_input.inputText),\n\t\ttip: parseFloat(tip_input.inputText),\n    fee: parseFloat(fee_input.inputText),\n    tax: parseFloat(tax_input.inputText),\n    status: \"pending\",\n    restaurant_id: parseInt(appsmith.URL.queryParams.resID),\n\t\tstudent_id: appsmith.store.currentStudent.student_id\n\t}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -45,9 +45,6 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
-      },
-      {
         "key": "body"
       }
     ],
@@ -55,8 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\n\t{\n\t\tproducts: appsmith.store?.orderProducts.map(({product_id}) => product_id) || [],\n\t\tsubtotal: parseFloat(subtotal_input.inputText),\n\t\ttip: parseFloat(tip_input.inputText),\n    fee: parseFloat(fee_input.inputText),\n    tax: parseFloat(tax_input.inputText),\n    status: \"pending\",\n    restaurant_id: parseInt(appsmith.URL.queryParams.resID),\n\t}\n",
-      "appsmith.store.currentStudent.student_id"
+      "\n\t{\n\t\tproducts: appsmith.store?.orderProducts.map(({product_id}) => product_id) || [],\n\t\tsubtotal: parseFloat(subtotal_input.inputText),\n\t\ttip: parseFloat(tip_input.inputText),\n    fee: parseFloat(fee_input.inputText),\n    tax: parseFloat(tax_input.inputText),\n    status: \"pending\",\n    restaurant_id: parseInt(appsmith.URL.queryParams.resID),\n\t\tstudent_id: appsmith.store.currentStudent.student_id\n\t}\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

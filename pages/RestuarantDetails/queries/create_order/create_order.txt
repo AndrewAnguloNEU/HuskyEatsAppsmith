@@ -7,5 +7,6 @@
     tax: parseFloat(tax_input.inputText),
     status: "pending",
     restaurant_id: parseInt(appsmith.URL.queryParams.resID),
+		student_id: appsmith.store.currentStudent.student_id
 	}
 }}
