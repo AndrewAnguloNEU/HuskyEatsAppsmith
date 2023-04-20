@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "cmd",
+    "pageId": "RestaurantOwner",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "RestaurantOwner_cmd",
+  "deleted": false,
+  "gitSyncId": "644076183ebd9b209baa03df_6441a794b1bb404eb83e8feb"
+}

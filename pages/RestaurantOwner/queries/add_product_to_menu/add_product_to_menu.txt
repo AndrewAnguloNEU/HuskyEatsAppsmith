@@ -1,0 +1,8 @@
+{{
+	{
+		name:add_product.inputText,
+		description:product_description.inputText,
+	 	price:product_price.value,
+		category_id:new_category_select.selectedOptionValue
+	}
+}}
