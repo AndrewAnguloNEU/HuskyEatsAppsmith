@@ -2611,6 +2611,7 @@
                       "pageSize": 3,
                       "type": "LIST_WIDGET_V2",
                       "itemSpacing": 8,
+                      "topRowBeforeCollapse": 15,
                       "animateLoading": true,
                       "dynamicBindingPathList": [
                         {
@@ -3020,7 +3021,8 @@
                       ],
                       "itemBackgroundColor": "#FFFFFF",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": "{{!(appsmith.store.currentStudent == undefined || appsmith.store.currentBuilding)}}",
+                      "bottomRowBeforeCollapse": 62,
+                      "isVisible": "{{!(appsmith.store.currentStudent == undefined || appsmith.store.currentBuilding == undefined)}}",
                       "hasMetaWidgets": true,
                       "isLoading": false,
                       "mainCanvasId": "xylwrwh34b",
