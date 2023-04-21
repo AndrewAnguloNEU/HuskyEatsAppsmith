@@ -1,0 +1,8 @@
+{{
+	{
+		first_name: appsmith.store.currentStudent.first_name,
+		last_name: appsmith.store.currentStudent.last_name,
+		phone: appsmith.store.currentStudent.phone,
+		building_id: appsmith.store.currentBuilding,
+	}
+}}

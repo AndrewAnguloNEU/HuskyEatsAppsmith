@@ -11,6 +11,10 @@
     {
       "id": "RestaurantOwner",
       "isDefault": false
+    },
+    {
+      "id": "RestaurantOrders",
+      "isDefault": false
     }
   ],
   "viewMode": false,

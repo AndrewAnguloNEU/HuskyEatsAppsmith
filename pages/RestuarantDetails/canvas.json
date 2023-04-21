@@ -83,7 +83,7 @@
                         "label"
                       ],
                       "topRow": 2,
-                      "bottomRow": 7,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -129,7 +129,7 @@
                       "originalTopRow": 2,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
+                      "originalBottomRow": 7,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     }
@@ -275,7 +275,7 @@
                       "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "",
+                      "onOptionChange": "{{get_products.run()}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1304,7 +1304,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Reset",
+                      "text": "Clear",
                       "isDisabled": false,
                       "key": "eccfx5lmo0",
                       "isDeprecated": false,

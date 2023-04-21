@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "order_commands",
+    "pageId": "RestaurantOrders",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "RestaurantOrders_order_commands",
+  "deleted": false,
+  "gitSyncId": "643db70fe765624402a4e89b_6441d39eaf0741486e65f4b2"
+}

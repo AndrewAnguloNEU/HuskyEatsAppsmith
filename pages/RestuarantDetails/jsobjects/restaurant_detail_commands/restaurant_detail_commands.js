@@ -4,7 +4,7 @@ export default {
 	},
 	filterProducts: () => {
 		const selectedMenuID = menu_select.selectedOptionValue
-		return get_products.data.filter(product => product.product_id === selectedMenuID)
+		return get_products.data.filter(product => product.menu_id === selectedMenuID)
 	},
 	addItemToOrder: () => {
 		const product = product_list?.selectedItem
